@@ -3,15 +3,14 @@ package com.packagechallenge;
 public class Conversion  {
 
     private int seconds;
-    private int second = this.seconds%60;
+    private int second;
 
     public Conversion(int seconds) {
         this.seconds = seconds;
     }
 
-
     public int getSecond() {
-        return second;
+        return this.seconds%60;
     }
 
     public int secondsToMinutes() {
